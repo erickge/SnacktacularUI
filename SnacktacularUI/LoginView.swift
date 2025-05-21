@@ -19,6 +19,7 @@ struct LoginView: View {
     @State private var showingAlert = false
     @State private var alertMessage = ""
     @State private var buttonDisabled = true
+    @State private var presentSheet = false
     @FocusState private var focusField: Field?
     var body: some View {
         VStack {
@@ -77,6 +78,16 @@ struct LoginView: View {
         .alert(alertMessage, isPresented: $showingAlert)  {
             Button("OK", role: .cancel) { }
         }
+        .onAppear() {
+            if Auth.auth().currentUser != nil {
+                print("🪵 Log in successful!")
+                presentSheet = true
+            }
+        }
+        .fullScreenCover(isPresented: $presentSheet)    {
+            ListView()
+            
+        }
     }
     
     func enableButtons() {
@@ -91,11 +102,12 @@ struct LoginView: View {
         Auth.auth().createUser(withEmail: email, password: password) { result,
             error in
             if let error = error {
-               print("😡 Registration error: \(error.localizedDescription)")
+                print("😡 Registration error: \(error.localizedDescription)")
                 alertMessage = "Registration Error: \(error.localizedDescription)"
                 showingAlert = true
             } else {
                 print("😎Registration success!")
+                presentSheet = true
             }
             
         }
@@ -103,11 +115,12 @@ struct LoginView: View {
     func login() {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
-               print("😡 Login error: \(error.localizedDescription)")
+                print("😡 Login error: \(error.localizedDescription)")
                 alertMessage = "Login Error: \(error.localizedDescription)"
                 showingAlert = true
             } else {
                 print("😎Login success!")
+                presentSheet = true
             }
         }
     }
