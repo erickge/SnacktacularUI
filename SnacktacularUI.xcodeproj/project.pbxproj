@@ -16,6 +16,16 @@
 		C80F4BCA2DDE1E5600772258 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BC32DDE1E5600772258 /* LoginView.swift */; };
 		C80F4BCB2DDE1E5600772258 /* SnacktacularUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BC42DDE1E5600772258 /* SnacktacularUIApp.swift */; };
 		C80F4BCD2DDE1EFC00772258 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BCC2DDE1EFC00772258 /* ListView.swift */; };
+		C80F4BCF2DDE4BE900772258 /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BCE2DDE4BE900772258 /* Spot.swift */; };
+		C80F4BD12DDE4D1F00772258 /* SpotDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BD02DDE4D1F00772258 /* SpotDetailView.swift */; };
+		C80F4BD52DDE538700772258 /* SpotViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BD42DDE538700772258 /* SpotViewModel.swift */; };
+		C80F4BD72DDF729900772258 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BD62DDF729900772258 /* PhotoView.swift */; };
+		C80F4BD92DE2538500772258 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BD82DE2538500772258 /* Photo.swift */; };
+		C80F4BDB2DE2554500772258 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C80F4BDA2DE2554500772258 /* PhotoViewModel.swift */; };
+		C8C55EE62DE9700C002B5841 /* PlaceLookupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55EE32DE9700C002B5841 /* PlaceLookupView.swift */; };
+		C8C55EE72DE9700C002B5841 /* LocationAndPlaceLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55EE52DE9700C002B5841 /* LocationAndPlaceLookup.swift */; };
+		C8C55EE82DE9700C002B5841 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55EE22DE9700C002B5841 /* Place.swift */; };
+		C8C55EE92DE9700C002B5841 /* PlaceLookupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C55EE42DE9700C002B5841 /* PlaceLookupViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +37,16 @@
 		C80F4BC32DDE1E5600772258 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C80F4BC42DDE1E5600772258 /* SnacktacularUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnacktacularUIApp.swift; sourceTree = "<group>"; };
 		C80F4BCC2DDE1EFC00772258 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		C80F4BCE2DDE4BE900772258 /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
+		C80F4BD02DDE4D1F00772258 /* SpotDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailView.swift; sourceTree = "<group>"; };
+		C80F4BD42DDE538700772258 /* SpotViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotViewModel.swift; sourceTree = "<group>"; };
+		C80F4BD62DDF729900772258 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		C80F4BD82DE2538500772258 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		C80F4BDA2DE2554500772258 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		C8C55EE22DE9700C002B5841 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		C8C55EE32DE9700C002B5841 /* PlaceLookupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupView.swift; sourceTree = "<group>"; };
+		C8C55EE42DE9700C002B5841 /* PlaceLookupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceLookupViewModel.swift; sourceTree = "<group>"; };
+		C8C55EE52DE9700C002B5841 /* LocationAndPlaceLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAndPlaceLookup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +93,17 @@
 			children = (
 				C80F4BC42DDE1E5600772258 /* SnacktacularUIApp.swift */,
 				C80F4BC32DDE1E5600772258 /* LoginView.swift */,
+				C80F4BCE2DDE4BE900772258 /* Spot.swift */,
+				C80F4BD02DDE4D1F00772258 /* SpotDetailView.swift */,
+				C80F4BD82DE2538500772258 /* Photo.swift */,
+				C80F4BD62DDF729900772258 /* PhotoView.swift */,
+				C80F4BDA2DE2554500772258 /* PhotoViewModel.swift */,
+				C80F4BD42DDE538700772258 /* SpotViewModel.swift */,
 				C80F4BCC2DDE1EFC00772258 /* ListView.swift */,
+				C8C55EE42DE9700C002B5841 /* PlaceLookupViewModel.swift */,
+				C8C55EE32DE9700C002B5841 /* PlaceLookupView.swift */,
+				C8C55EE22DE9700C002B5841 /* Place.swift */,
+				C8C55EE52DE9700C002B5841 /* LocationAndPlaceLookup.swift */,
 				C80F4BC12DDE1E5600772258 /* Assets.xcassets */,
 				C80F4BC22DDE1E5600772258 /* Info.plist */,
 				C80F4BC02DDE1E5600772258 /* Preview Content */,
@@ -161,9 +191,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C80F4BD92DE2538500772258 /* Photo.swift in Sources */,
+				C80F4BD12DDE4D1F00772258 /* SpotDetailView.swift in Sources */,
 				C80F4BCA2DDE1E5600772258 /* LoginView.swift in Sources */,
+				C8C55EE62DE9700C002B5841 /* PlaceLookupView.swift in Sources */,
+				C8C55EE72DE9700C002B5841 /* LocationAndPlaceLookup.swift in Sources */,
+				C8C55EE82DE9700C002B5841 /* Place.swift in Sources */,
+				C8C55EE92DE9700C002B5841 /* PlaceLookupViewModel.swift in Sources */,
+				C80F4BD72DDF729900772258 /* PhotoView.swift in Sources */,
+				C80F4BDB2DE2554500772258 /* PhotoViewModel.swift in Sources */,
+				C80F4BD52DDE538700772258 /* SpotViewModel.swift in Sources */,
 				C80F4BCB2DDE1E5600772258 /* SnacktacularUIApp.swift in Sources */,
 				C80F4BCD2DDE1EFC00772258 /* ListView.swift in Sources */,
+				C80F4BCF2DDE4BE900772258 /* Spot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +341,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SnacktacularUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the devices location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -331,7 +373,9 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SnacktacularUI/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app requires access to the devices location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

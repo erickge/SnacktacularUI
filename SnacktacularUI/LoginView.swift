@@ -13,6 +13,9 @@ struct LoginView: View {
     enum Field {
         case email,password
     }
+    // Add location manager
+    @State var locationManager = LocationManager()
+    @State var selectedPlace: Place?
     
     @State private var email = ""
     @State private var password = ""
@@ -23,6 +26,10 @@ struct LoginView: View {
     @FocusState private var focusField: Field?
     var body: some View {
         VStack {
+            // Add location Manager
+            Text ("\(locationManager.location?.coordinate.latitude ?? 0.0), \(locationManager.location?.coordinate.longitude ?? 0.0)")
+            Text("Using selected place:\(selectedPlace?.latitude ?? 0.0), \(selectedPlace?.longitude ?? 0.0)")
+            Spacer()
             Image("logo")
                 .imageScale(.large)
                 .scaledToFit()
@@ -66,7 +73,7 @@ struct LoginView: View {
                     login()
                 }
                 .padding(.leading)
-                
+             
             }
             .buttonStyle(.borderedProminent)
             .tint(.snack)
@@ -83,6 +90,7 @@ struct LoginView: View {
                 print("🪵 Log in successful!")
                 presentSheet = true
             }
+            //PlaceLookupView(locationManager: locationManager)
         }
         .fullScreenCover(isPresented: $presentSheet)    {
             ListView()

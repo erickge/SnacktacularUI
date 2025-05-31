@@ -20,9 +20,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct SnacktacularUIApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    // Add location manager
+    @State var locationManager = LocationManager()
+    @State var selectedPlace: Place?
+    
+//    @StateObject var spotVM = SpotViewModel()
+//    @StateObject var locationManager = LocationManager()
     var body: some Scene {
         WindowGroup {
             LoginView()
+                //.environmentObject(locationManager)
         }
     }
 }
